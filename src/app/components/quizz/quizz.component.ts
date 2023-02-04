@@ -31,7 +31,7 @@ export class QuizzComponent {
     }
   }
 
-  showResult() {
+  async showResult() {
     const villain = this.answers.filter(alias => alias === 'A').length;
     const hero = this.answers.length - villain;
 
